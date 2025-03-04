@@ -1,0 +1,7 @@
+p {
+    color: snow;          /* Text color */
+    background: black;     /* Background color */
+    font-weight: bold;     /* Makes text bold */
+    text-align: center;    /* Centers text */
+    font-size: 20px;       /* Adjusts font size */
+}

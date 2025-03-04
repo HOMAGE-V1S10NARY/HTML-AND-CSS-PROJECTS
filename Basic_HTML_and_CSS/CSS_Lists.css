@@ -1,0 +1,16 @@
+/* Change ordered list (numbered) to Roman numerals */
+ol {
+    list-style-type: upper-roman; /* Displays as I, II, III, IV... */
+}
+
+/* Change unordered list (bullets) to squares */
+ul {
+    list-style-type: square; /* Displays square bullets */
+}
+
+/* Additional styling (Optional) */
+li {
+    margin: 5px 0; /* Adds space between list items */
+    color: darkblue; /* Changes text color */
+    font-weight: bold; /* Makes text bold */
+}

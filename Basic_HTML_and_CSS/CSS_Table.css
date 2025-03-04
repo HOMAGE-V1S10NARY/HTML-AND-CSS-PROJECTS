@@ -1,0 +1,35 @@
+/* Add a silver border to all table cells */
+table, th, td {
+    border: 1px solid silver;
+    border-collapse: collapse;
+}
+
+/* Add spacing inside cells */
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the table header */
+th {
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Add hover effect for table rows */
+tr:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Make the top row stand out */
+tr:first-child {
+    background-color: black;
+    color: white;
+}
+
+/* Alternate row styling */
+tr:nth-child(even) {
+    background-color: darkgreen;
+    color: white;
+}
