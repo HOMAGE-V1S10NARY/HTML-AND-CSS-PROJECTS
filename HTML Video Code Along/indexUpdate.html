@@ -1,0 +1,118 @@
+<!-- indexUpdate.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to The Pet Shop - Your one-stop shop for all your furry, feathery, and scaly friends." />
+    <title>The Pet Shop</title>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="indexUpdate.html">HOME</a></li>
+            <li><a href="contactUpdated.html">CONTACT</a></li>
+        </ul>
+        <!-- Pet Categories for Easy Navigation -->
+        <ul>
+            <li><a href="#cat">Cats & Kittens</a></li>
+            <li><a href="#dog">Dogs & Puppies</a></li>
+            <li><a href="#rabbit">Rabbits</a></li>
+            <li><a href="#guineapig">Guinea Pigs</a></li>
+            <li><a href="#fish">Fish</a></li>
+            <li><a href="#reptile">Reptiles</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#audio">Pet Sounds</a></li>
+        </ul>
+    </nav>
+    <!-- Header Section with Site Introduction -->
+    <header>
+        <h1>Welcome to <em>The Pet Shop</em>!</h1>
+        <p>Your one-stop shop for all your <em>furry, feathery, and scaly friends</em>.</p>
+        <!-- Featured Quote about Loving Animals -->
+        <blockquote>
+            "Until one has loved an animal, a part of one’s soul remains unawakened." - Anatole France
+        </blockquote>
+    </header>
+    <!-- Information Section with External Resource Link -->
+    <section>
+        <p>For more details, check out our  
+            <a href="https://learncodinganywhere.com/" target="_blank" rel="noopener noreferrer">
+                official resource page
+            </a>.
+        </p>
+    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Pet Selection Section -->
+        <section>
+            <h2>Pick a Pet!</h2>
+            <article id="cat">
+                <h3>Cats & Kittens</h3>
+                <img src="images/cat.png" alt="Picture of kittens">
+            </article>
+            <article id="dog">
+                <h3>Dogs & Puppies</h3>
+                <img src="images/dog.png" alt="Picture of dogs">
+            </article>
+            <article id="rabbit">
+                <h3>Rabbits</h3>
+                <img src="images/rabbit.png" alt="Picture of rabbit">
+            </article>
+            <article id="guineapig">
+                <h3>Guinea Pigs</h3>
+                <img src="images/guineapig.png" alt="Picture of guinea pig">
+            </article>
+            <article id="fish">
+                <h3>Fish</h3>
+                <img src="images/fish.png" alt="Picture of goldfish">
+            </article>
+            <article id="reptile">
+                <h3>Reptiles</h3>
+                <img src="images/reptile.png" alt="Picture of a lizard">
+            </article>
+        </section>
+        <!-- Video Section -->
+        <section id="videos">
+            <h2>Pet Videos</h2>
+            <p><a href="#top">Back to Top</a></p>
+            <!-- Embedded YouTube Video -->
+            <h3>Watch a Pet Video</h3>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/ng58pNPDDW4"
+                title="Pet Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <!-- Local Video File -->
+            <h3>Our Own Pet Compilation</h3>
+            <video width="640" height="360" controls>
+                <source src="videos/petshop.mp4" type="video/mp4">
+                <source src="videos/petshop.ogg" type="video/ogg">
+                Looks like your browser does not support the video tag – use Google Chrome!
+            </video>
+        </section>
+        <!-- Audio Section -->
+        <section id="audio">
+            <h2>Pet Sounds</h2>
+            <p>Listen to some of the cutest animal sounds!</p>
+            <p><a href="#top">Back to Top</a></p>
+            <audio controls>
+                <source src="audio/cat-meow.mp3" type="audio/mpeg">
+                <source src="audio/cat-meow.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+    <!-- Footer with Contact Information -->
+    <footer>
+        <p>&copy; The Pet Shop!</p>
+        <address>
+            123 Square Ave, Portland, OR 97204 <br>
+            <strong>Contact:</strong> 503-234-3966
+        </address>
+    </footer>
+</body>
+</html>
