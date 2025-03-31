@@ -1,74 +1,68 @@
-﻿<!-- contactUpdated.html -->
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Get in touch with The Pet Shop for inquiries and support." />
+  <meta name="description" content="Contact The Pet Shop — We’re here to help you and your pets!" />
+  <meta property="og:title" content="Contact The Pet Shop" />
+  <meta property="og:description" content="Get in touch with The Pet Shop team for all pet-related inquiries." />
+  <meta property="og:image" content="images/contact-preview.jpg" />
+  <link rel="icon" href="images/favicon.ico" />
   <title>Contact Us - The Pet Shop</title>
   <link rel="stylesheet" href="CSS/style.css" />
 </head>
+
 <body id="top">
-  <!-- NAVIGATION MENU -->
-  <nav class="nav-bar">
-    <ul id="nav-border">
-      <li><a href="indexUpdate.html">HOME</a></li>
-      <li><a href="contactUpdated.html">CONTACT</a></li>
-    </ul>
-  </nav>
+  <!-- Navigation -->
+  <header>
+    <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+      <ul id="nav-border">
+        <li><a href="indexUpdate.html">HOME</a></li>
+        <li><a href="contactUpdated.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- CONTACT HEADER -->
-  <section>
-    <h1 class="animate-text">Contact Us!</h1>
-    <h3 id="contact-h3">Please provide your contact information and a brief message of your inquiry.</h3>
+  <!-- Header Section -->
+  <header>
+    <h1 class="animate-text">Contact <em>The Pet Shop</em></h1>
+    <h3 id="contact-h3">We’d love to hear from you!</h3>
+  </header>
 
-    <!-- CONTACT FORM -->
-    <form action="submit_form.php" method="POST">
-      <label for="first-name">First Name:</label>
-      <input type="text" id="first-name" name="first-name" placeholder="First Name" required />
+  <!-- Form Section -->
+  <main role="main">
+    <section aria-label="Contact Form">
+      <form action="#" method="POST" novalidate>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
 
-      <label for="last-name">Last Name:</label>
-      <input type="text" id="last-name" name="last-name" placeholder="Last Name" required />
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Email" required />
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" />
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
 
-      <input type="checkbox" id="newsletter" name="newsletter" />
-      <label for="newsletter">Would you like to receive our monthly newsletter?</label>
+        <input type="submit" value="Send Message" />
+      </form>
+    </section>
 
-      <label for="message">Your Message:</label>
-      <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+    <!-- Back to Top -->
+    <section class="external-link">
+      <p><a href="#top">Back to Top</a></p>
+    </section>
+  </main>
 
-      <input type="submit" value="Submit" />
-    </form>
-  </section>
-
-  <!-- ADDITIONAL RESOURCES -->
-  <section>
-    <h2>Additional Resources</h2>
-    <p>
-      For more details, visit our
-      <a href="https://learncodinganywhere.com/" target="_blank" rel="noopener noreferrer">
-        official resource page
-      </a>.
-    </p>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer>
-    <table>
-      <tr>
-        <td><p>&copy; The Pet Shop!</p></td>
-        <td>
-          <p>123 Square Ave</p>
-          <p>Portland, OR 97204</p>
-        </td>
-        <td><p>📞 503-234-3966</p></td>
-      </tr>
-    </table>
+    <p>&copy; The Pet Shop!</p>
+    <address>
+      123 Square Ave, Portland, OR 97204 <br />
+      <strong>Contact:</strong> 503-234-3966
+    </address>
   </footer>
 </body>
 </html>
