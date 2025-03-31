@@ -1,0 +1,128 @@
+/* === GLOBAL RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* === BODY === */
+  body {
+    font-family: 'Mukta', sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /* === NAVIGATION BAR === */
+  .nav-bar {
+    background-color: #000;
+    padding: 12px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-bar ul.main-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .nav-bar ul.main-menu > li {
+    position: relative;
+  }
+  
+  .nav-bar a {
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .nav-bar a:hover,
+  .dropdown-content a:hover {
+    background-color: #00c0ff;
+    color: #000;
+  }
+  
+  /* === DROPDOWN === */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #111;
+    border-radius: 6px;
+    padding: 10px;
+    min-width: 150px;
+    box-shadow: 0 4px 12px rgba(0, 192, 255, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    white-space: nowrap;
+    border-radius: 4px;
+  }
+  
+  .dropdown:hover .dropdown-content,
+  .dropdown-content:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* === IMAGE GALLERY === */
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+  
+  .image-box {
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-box img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-box:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0, 255, 255, 0.4);
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .nav-bar ul.main-menu {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .dropdown-content {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      box-shadow: none;
+      background-color: #222;
+      margin-left: 10px;
+    }
+  }
+  

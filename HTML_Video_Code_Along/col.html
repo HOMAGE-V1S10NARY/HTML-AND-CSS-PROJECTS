@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>COL Tag Challenge</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    table {
+      margin: 50px auto;
+      border-collapse: collapse;
+      width: 60%;
+      border: 1px solid #555;
+    }
+
+    colgroup col:nth-child(1) {
+      background-color: #222;
+    }
+
+    colgroup col:nth-child(2) {
+      background-color: #004d66;
+    }
+
+    colgroup col:nth-child(3) {
+      background-color: #006666;
+    }
+
+    th, td {
+      padding: 15px;
+      border: 1px solid #444;
+    }
+
+    th {
+      color: #00c0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pet Data Table</h1>
+
+  <table>
+    <colgroup>
+      <col />
+      <col />
+      <col />
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Pet</th>
+        <th>Age</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Whiskers</td>
+        <td>2</td>
+        <td>Cat</td>
+      </tr>
+      <tr>
+        <td>Barkley</td>
+        <td>4</td>
+        <td>Dog</td>
+      </tr>
+      <tr>
+        <td>Snowball</td>
+        <td>1</td>
+        <td>Rabbit</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
