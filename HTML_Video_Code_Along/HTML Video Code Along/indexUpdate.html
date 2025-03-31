@@ -1,17 +1,15 @@
-<!-- indexUpdate.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to The Pet Shop - Your one-stop shop for all your furry, feathery, and scaly friends." />
+    <meta name="description" content="Welcome to The Pet Shop - Your one-stop shop for all your furry, feathery, and scaly friends.">
     <title>The Pet Shop</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css"> <!-- Connect your CSS file -->
 </head>
-<body>
+<body id="top">
     <!-- Navigation Menu -->
-    <nav>
-        <nav class="nav-bar"></nav>
+    <nav class="nav-bar">
         <ul id="nav-border">
             <li><a href="indexUpdate.html">HOME</a></li>
             <li><a href="contactUpdated.html">CONTACT</a></li>
@@ -28,15 +26,16 @@
             <li><a href="#audio">Pet Sounds</a></li>
         </ul>
     </nav>
+
     <!-- Header Section with Site Introduction -->
     <header>
-        <h1>Welcome to <em>The Pet Shop</em>!</h1>
+        <h1 class="animate-text">Welcome to <em>The Pet Shop</em>!</h1>
         <p>Your one-stop shop for all your <em>furry, feathery, and scaly friends</em>.</p>
-        <!-- Featured Quote about Loving Animals -->
         <blockquote>
-            "Until one has loved an animal, a part of one’s soul remains unawakened." - Anatole France
+            "Until one has loved an animal, a part of one’s soul remains unawakened." – Anatole France
         </blockquote>
     </header>
+
     <!-- Information Section with External Resource Link -->
     <section>
         <p>For more details, check out our  
@@ -45,6 +44,7 @@
             </a>.
         </p>
     </section>
+
     <!-- Main Content -->
     <main>
         <!-- Pet Selection Section -->
@@ -75,11 +75,11 @@
                 <img src="images/reptile.png" alt="Picture of a lizard">
             </article>
         </section>
+
         <!-- Video Section -->
         <section id="videos">
             <h2>Pet Videos</h2>
             <p><a href="#top">Back to Top</a></p>
-            <!-- Embedded YouTube Video -->
             <h3>Watch a Pet Video</h3>
             <iframe width="560" height="315" 
                 src="https://www.youtube.com/embed/ng58pNPDDW4"
@@ -88,7 +88,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
-            <!-- Local Video File -->
+
             <h3>Our Own Pet Compilation</h3>
             <video width="640" height="360" controls>
                 <source src="videos/petshop.mp4" type="video/mp4">
@@ -96,6 +96,7 @@
                 Looks like your browser does not support the video tag – use Google Chrome!
             </video>
         </section>
+
         <!-- Audio Section -->
         <section id="audio">
             <h2>Pet Sounds</h2>
@@ -108,6 +109,7 @@
             </audio>
         </section>
     </main>
+
     <!-- Footer with Contact Information -->
     <footer>
         <p>&copy; The Pet Shop!</p>

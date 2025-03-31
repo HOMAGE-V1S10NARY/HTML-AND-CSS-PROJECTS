@@ -1,42 +1,143 @@
-body{
+/* === BODY STYLING === */
+body {
     background-color: rgb(126, 126, 126);
-    overflow-x: hidden; /*Hides the bottom left right scroll bar when the element stretch beyond the screen border*/
+    overflow-x: hidden; /* Prevents horizontal scrollbar */
+    margin: 0;
+    padding: 0;
 }
 
-/*NAVBAR*/
-
-li{
-    display: inline;
-    padding: 5px 
-}
-
-a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    text-shadow: 1px .5px 4px rgba(red, green, blue, alpha)(46, 31, 31, 0.5);
-    color: white;
-    text-decoration: none; /*Removes the default like styling*/
-}
-
-a:hover{
-    color: #f7d7d7; /*Changes the color of the anchor element when a user hovers their mouse over it*/
-}
-
-.nav-bar{
+/* === NAVIGATION BAR === */
+.nav-bar {
     background-color: #000000;
     padding-top: 10px;
     padding-bottom: 10px;
-    /*The following minus margins stretch the navbar background beyond the web browser screen edge"*/
     margin-top: -8px;
     margin-left: -10px;
     margin-right: -10px;
-    position: sticky; /*Creates a sticky element that stays in the same spot in the browser screen*/
-    top: 0; /*Tells the browser to stick the element at the top of the page based on the user scrolling*/
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keeps navbar above other elements */
 }
 
-/*Creates a line under the Home and Contact links to separate them from the image links*/
-#nav-border{
+#nav-border {
     padding-bottom: 10px;
-    border-bottom: 3px solid #ffffff
+    border-bottom: 3px solid #ffffff;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px 0.5px 4px rgba(46, 31, 31, 0.5);
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f7d7d7;
+}
+
+/* === HEADINGS === */
+h1, h2, h3 {
+    color: #0a3f63;
+    text-align: center;
+    font-family: "Mukta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 1px 0.5px 4px rgba(0, 0, 0, 0.5);
+    margin: 0px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#contact-h3 {
+    text-shadow: none; /* Disables shadow for a cleaner sub-header */
+}
+
+/* === CONTACT FORM STYLING === */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background-color: #ffffff20; /* Translucent white over gray bg */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-family: "Mukta", sans-serif;
+    background-color: white;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #0a3f63;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #095283;
+}
+
+/* === TEXT ANIMATION FOR H1 === */
+@keyframes color-text {
+    0% { color: #b5e1ff; }
+    100% { color: #0a3f63; }
+}
+
+.animate-text {
+    animation: color-text 4s;
+}
+
+/* === IMAGE STYLING === */
+img {
+    max-width: 100%; /* Makes images responsive */
+    height: auto;     /* Keeps original aspect ratio */
+    border-radius: 10px;
+    border: none;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.4),
+        0 6px 20px rgba(0, 0, 0, 0.19); /* FIXED rgba typo: was (0,0,0,19) */
+    display: block;
+    margin: 20px auto; /* Center image in parent container */
 }
