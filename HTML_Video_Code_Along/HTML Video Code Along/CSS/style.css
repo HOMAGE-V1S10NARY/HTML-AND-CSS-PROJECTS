@@ -187,3 +187,46 @@ section::after {
     margin: auto;
     margin-bottom: 50px;
 }
+/*Sets the background color in each div with an image and specifies which ones by the use of the id names for each image*/
+#cat{
+    background-color: #d7eaf7;
+}
+
+#dog{
+    background-color: #c3e0c5;
+}
+
+#rabbit{
+    background-color: #c3e0c5;
+}
+
+#guineapig{
+    background-color: #d7eaf7;
+}
+
+#fish{
+    background-color: #d7eaf7;
+}
+
+#reptile{
+    background-color: #c3e0c5;
+}
+
+/*Sets up the properties for the overlay of each image*/
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(0,0,0);
+    opacity: 0;
+}
+
+/*The :hover psuedo-class triggers the overlay class to 60% opacity when a user hovers their mouse over an image*/
+.overlay:hover{
+    opacity: 0.6;
+}
