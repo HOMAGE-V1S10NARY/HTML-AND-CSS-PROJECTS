@@ -1,7 +1,7 @@
 /* === BODY STYLING === */
 body {
     background-color: rgb(126, 126, 126);
-    overflow-x: hidden; /* Prevents horizontal scrollbar */
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@ body {
     margin-right: -10px;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Keeps navbar above other elements */
+    z-index: 1000;
 }
 
 #nav-border {
@@ -69,7 +69,7 @@ h3 {
 }
 
 #contact-h3 {
-    text-shadow: none; /* Disables shadow for a cleaner sub-header */
+    text-shadow: none;
 }
 
 /* === CONTACT FORM STYLING === */
@@ -80,9 +80,9 @@ form {
     flex-direction: column;
     gap: 12px;
     padding: 20px;
-    background-color: #ffffff20; /* Translucent white over gray bg */
+    background-color: #ffffff20;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 input[type="text"],
@@ -131,13 +131,59 @@ input[type="submit"]:hover {
 
 /* === IMAGE STYLING === */
 img {
-    max-width: 100%; /* Makes images responsive */
-    height: auto;     /* Keeps original aspect ratio */
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     border: none;
-    box-shadow: 
-        0 4px 8px rgba(0, 0, 0, 0.4),
-        0 6px 20px rgba(0, 0, 0, 0.19); /* FIXED rgba typo: was (0,0,0,19) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
+                0 6px 20px rgba(0, 0, 0, 0.19);
     display: block;
-    margin: 20px auto; /* Center image in parent container */
+    margin: 20px auto;
+}
+
+/* === TWO-COLUMN PET LAYOUT === */
+.column {
+    float: left;
+    width: 48%;
+    margin: 1%;
+}
+
+/* === CLEARFIX FOR FLOAT CONTAINER === */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+/* === WRAPPING CONTAINER === */
+.container {
+    background-size: 100% !important;
+    margin: 0px -60px 50px -40px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+/*This is part of the .container class selector to format the elements to display in a table like format*/
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Sets up the size of each div that holds an image so the image can be centered*/
+.image-container{
+    position: relative;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
 }
