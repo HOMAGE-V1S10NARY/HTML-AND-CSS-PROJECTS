@@ -6,11 +6,12 @@
   <meta name="description" content="CSS Effects Page with Interactive Navigation and Images" />
   <title>Creating Effects with CSS</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- NAVIGATION -->
-<nav class="nav-bar">
+  <nav class="nav-bar">
     <ul class="main-menu">
       <li><a href="#">Home</a></li>
       <li class="dropdown">
@@ -23,26 +24,50 @@
       </li>
     </ul>
   </nav>
-  
+
   <!-- IMAGE SECTION -->
   <section class="image-gallery">
     <div class="image-box" id="image1">
       <img src="Images/Omni1.png" alt="Omni Art 1" />
+      <div class="overlay"></div>
     </div>
-  
-    <div class="image-box" id="image2">
+
+    <div class="image-box zoom" id="image2">
       <img src="Images/Omni2.png" alt="Omni Art 2" />
     </div>
-  
-    <div class="image-box" id="image3">
+
+    <div class="image-box circle" id="image3">
       <img src="Images/Omni3.png" alt="Omni Art 3" />
     </div>
   </section>
-  <!--FOOTER-->
+
+  <!-- FOOTER -->
   <footer>
-    <div>
-        <p>The Tech Academy &copy;</p>
+    <div class="footer-text">
+      <p>The Tech Academy &copy;</p>
     </div>
   </footer>
+
+  <!-- JS FOR DROPDOWN ANIMATION CONTROL -->
+  <script>
+    const dropdown = document.querySelector(".dropdown");
+    const dropdownContent = dropdown.querySelector(".dropdown-content");
+
+    dropdown.addEventListener("mouseenter", () => {
+      dropdownContent.style.display = "block";
+      setTimeout(() => {
+        dropdownContent.style.opacity = "1";
+        dropdownContent.style.visibility = "visible";
+      }, 10);
+    });
+
+    dropdown.addEventListener("mouseleave", () => {
+      dropdownContent.style.opacity = "0";
+      dropdownContent.style.visibility = "hidden";
+      setTimeout(() => {
+        dropdownContent.style.display = "none";
+      }, 300);
+    });
+  </script>
 </body>
 </html>
